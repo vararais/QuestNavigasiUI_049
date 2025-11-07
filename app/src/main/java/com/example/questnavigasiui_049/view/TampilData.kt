@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.sp
 import com.example.questnavigasiui_049.R
 
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TampilData(
     onBackBtnClick: () -> Unit
