@@ -42,11 +42,11 @@ fun TampilData(
                 title = { Text(text = stringResource(id=R.string.tampil), color = Color.White)},
                 colors = TopAppBarDefaults.mediumTopAppBarColors(colorResource(id=R.color.teal_700))
             )
-        }){  isiRuang->
+        }){ isiRuang ->
         Column(modifier = Modifier.padding(isiRuang),
-            verticalArrangement = Arrangement.SpaceBetween) {
+            verticalArrangement = Arrangement.SpaceBetween){
             Column(modifier = Modifier.padding(dimensionResource(id= R.dimen.padding_medium)),
-                verticalArrangement = Arrangement.spacedBy(dimensionResource(id= R.dimen.padding_small))){
+                verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_small))){
                 items.forEach { item ->
                     Column{
                         Text(text = item.first.uppercase(), fontSize = 16.sp)
@@ -60,11 +60,8 @@ fun TampilData(
                     onClick = onBackBtnClick) {
                     Text(stringResource(id = R.string.back))
                 }
-
             }
         }
 
     }
-
-
 }
