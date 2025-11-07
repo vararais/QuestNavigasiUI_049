@@ -40,7 +40,7 @@ fun TampilData(
                 title = { Text(text = stringResource(id=R.string.tampil), color = Color.White)},
                 colors = TopAppBarDefaults.mediumTopAppBarColors(colorResource(id=R.color.teal_700))
             )
-        }){ isiRuang->
+        }){  isiRuang->
         Column(modifier = Modifier.padding(isiRuang),
             verticalArrangement = Arrangement.SpaceBetween) {
             Column(modifier = Modifier.padding(dimensionResource(id= R.dimen.padding_medium)),
