@@ -22,22 +22,7 @@ import com.example.questnavigasiui_049.ui.theme.QuestNavigasiUI_049Theme
 import com.example.questnavigasiui_049.view.FormIsian
 import com.example.questnavigasiui_049.view.TampilData
 
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            QuestNavigasiUI_049Theme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    DataApp()
-                }
-            }
-        }
-    }
-}
+
 
 enum class Navigasi {
     Formulirku,
